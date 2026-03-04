@@ -1,2 +1,80 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+
+.icon_gear
+{
+    display: block;
+    background-image: url('/equip-icons.png');
+    width: 32px;
+    height: 32px;
+}
+/* ARMOR */
+.icon_gear.head
+{
+    background-position: 0px -200px;
+}
+.icon_gear.shoulders
+{
+    background-position: -32px -200px;
+}
+.icon_gear.coat
+{
+    background-position: -64px -200px;
+}
+.icon_gear.gloves
+{
+background-position: -96px -200px;
+}
+.icon_gear.leggings
+{
+background-position: -128px -200px;
+}
+.icon_gear.boots
+{
+background-position: -160px -200px;
+}
+/* ACCESSORIES */
+.icon_gear.backpiece
+{
+    background-position: -288px -200px;
+}
+.icon_gear.accessory1,
+.icon_gear.accessory2
+{
+    background-position: -256px -200px;
+}
+.icon_gear.ring1,
+.icon_gear.ring2
+{
+    background-position: -224px -200px;
+}
+.icon_gear.amulet
+{
+    background-position: -192px -200px;
+}
+.icon_gear.relic
+{
+    background-position: 0px -200px;
+}
+/* WEAPONS */
+.icon_gear.mainHand
+{
+    background-position: -352px -168px;
+}
+.icon_gear.offHand
+{
+    background-position: -416px -168px;
+}
+.icon_gear.sigil
+{
+    background-position: -320px -200px;
+}
+.icon_gear.rune
+{
+    background-position: -352px -200px;
+}
+.icon_gear.relic
+{
+    background-position: -384px -200px;
+}

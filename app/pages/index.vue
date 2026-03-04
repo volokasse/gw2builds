@@ -1,12 +1,26 @@
+<!-- app/pages/index.vue -->
 <script setup lang="ts">
+import Login from '~/components/Login.vue'
+import Register from '~/components/Register.vue'
+
+const auth = useAuth()
+
 const { data, pending, error } = await useFetch('/api/builds/latest', {
   method: 'GET'
 })
 </script>
 
 <template>
-  <div class="space-y-6">
-    <header class="space-y-1">
+  <!-- UNE SEULE RACINE -->
+  <div>
+    <!-- bloc auth : on laisse Login/Register décider via leur v-if interne -->
+    <UContainer class="flex justify-center flex-col md:flex-row gap-6">
+      <Login />
+      <Register />
+    </UContainer>
+
+    <!-- bloc builds -->
+    <header class="space-y-1 pt-10">
       <h1 class="text-2xl font-semibold text-white">
         Derniers builds publics
       </h1>
@@ -49,7 +63,11 @@ const { data, pending, error } = await useFetch('/api/builds/latest', {
                 </NuxtLink>
               </p>
             </div>
-            <UBadge color="primary" variant="soft" v-if="b.isPublic">
+            <UBadge
+              v-if="b.isPublic"
+              color="primary"
+              variant="soft"
+            >
               Public
             </UBadge>
           </div>

@@ -1,0 +1,19 @@
+export interface GW2_Equipments {
+  head: number | undefined
+  shoulders: number | undefined
+  coat: number | undefined
+  gloves: number | undefined
+  leggings: number | undefined
+  boots: number | undefined
+  backpiece: number | undefined
+  accessory1: number | undefined
+  accessory2: number | undefined
+  amulet: number | undefined
+  ring1: number | undefined
+  ring2: number | undefined
+  mainHand1: number | undefined
+  offHand1: number | undefined
+  mainHand2: number | undefined
+  offHand2: number | undefined
+  relic: number | undefined
+}

@@ -1,18 +1,19 @@
 <script setup lang="ts">
 const links = [
   { to: '/', label: 'Accueil' },
-  { to: '/me', label: 'Mes builds' },
-  { to: '/new-build', label: 'Nouveau' },
-  { to: '/login', label: 'Connexion' }
+  { to: '/me', label: 'Mes builds' }
 ];
 
+const { refresh, loggedIn } = useAuth();
 async function logout()
 {
   await $fetch('/api/auth/logout', {
     'method': 'POST',
     'credentials': 'include'
   });
-  navigateTo('/login');
+
+  await refresh();
+  navigateTo('/');
 }
 </script>
 
@@ -20,7 +21,7 @@ async function logout()
   <UApp>
     <div class="min-h-screen flex flex-col bg-gray-950 text-gray-100">
       <!-- Header -->
-      <header class="border-b border-gray-800 bg-gray-900/70 backdrop-blur supports-[backdrop-filter]:bg-gray-900/40">
+      <header class="border-b border-gray-800 bg-gray-900 sticky top-0 w-full z-50">
         <UContainer class="py-3 flex items-center justify-between gap-4 text-sm">
           <div class="font-semibold tracking-wide text-white">
             GW2 Builds
@@ -35,15 +36,20 @@ async function logout()
             >
               {{ link.label }}
             </NuxtLink>
-            <UButton @click="logout">
-              Logout
-            </UButton>
           </nav>
+          <ClientOnly>
+            <UIcon
+              v-if="loggedIn"
+              name="i-material-symbols:power-settings-new"
+              class="text-red-600 hover:text-red-500 transition-colors cursor-pointer size-5"
+              @click="logout"
+            />
+          </ClientOnly>
         </UContainer>
       </header>
 
       <!-- Page content -->
-      <main class="flex-1 py-8">
+      <main class="flex-1">
         <UContainer>
           <NuxtPage />
         </UContainer>

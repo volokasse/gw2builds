@@ -3,6 +3,8 @@ definePageMeta({
   middleware: ['auth-client']
 })
 
+import NewBuild from '~/components/NewBuild.vue';
+
 // Ici tu peux directement fetcher les données privées
 // par exemple /api/me/builds
 const { data, error, pending } = await useFetch('/api/me/builds', {
@@ -12,7 +14,8 @@ const { data, error, pending } = await useFetch('/api/me/builds', {
 </script>
 
 <template>
-  <div class="space-y-6">
+  <div class="space-y-6 relative">
+    <NewBuild />
     <h1 class="text-2xl font-semibold text-white">
       Mes builds
     </h1>

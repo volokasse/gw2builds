@@ -20,15 +20,22 @@ model User {
 model Build {
   id             Int        @id @default(autoincrement())
   title          String
+  styleTemplate  String     @default("")
   buildTemplate  String
-  buildClass     String     @default("")
+  buildClass     Int        @default(0)
   buildSpec      Int        @default(0)
   buildEquipment String     @db.LongText
   isPublic       Boolean    @default(false)
   createdAt      DateTime   @default(now())
-  slug           String?    @unique
+  slug           String?    @unique @db.VarChar(5)
 
   // FK vers User
   owner       User      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   ownerId     Int
+}
+
+model Gw2Cache {
+  key       String   @id
+  data      String   @db.LongText
+  updatedAt DateTime @updatedAt
 }

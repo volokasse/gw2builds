@@ -36,7 +36,8 @@ export default defineNuxtConfig({
       ],
       bodyAttrs: {
         class: 'antialiased'
-      }
+      },
+      htmlAttrs: { class: 'dark' }
     }
   },
 
