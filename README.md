@@ -124,3 +124,6 @@
 - **12.4** Export du build en format GW2 (bouton "Copier le code")
 - **12.5** Mode lecture anonyme ultra léger (sans JS)
 - **12.6** Pagination / lazy load sur `/` quand beaucoup de builds
+
+# Usefull Commands:
+```npx prisma generate``` - Pour générer le client prisma
