@@ -156,6 +156,8 @@
     function toggleFormBuild()
     {
         formOpen.value = !formOpen.value;
+        if (!formOpen.value)
+            statFormOpen.value = false;
     }
 </script>
 
