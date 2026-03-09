@@ -163,13 +163,15 @@
 
 <template>
     <div class="absolute flex w-full top-0 mt-4 z-50 justify-start items-center">
-        <UButton
-            icon="i-heroicons:plus-20-solid"
-            class="rounded-full cursor-pointer transition-all duration-400 ease-linear relative"
-            :class="formOpen ? 'left-5 rotate-45' : 'left-1/2'"
-            :ui="{ 'leadingIcon': 'size-8 text-white', 'base': 'bg-red-600 hover:bg-red-700 active:bg-red-700 disabled:bg-red-700 aria-disabled:bg-red-700 focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-red-700' }"
-            @click="toggleFormBuild"
-        />
+        <UTooltip text="Create Build" :content="{ align: 'center', side: 'bottom', sideOffset: 8 }" :delay-duration="0">
+            <UButton
+                icon="i-heroicons:plus-20-solid"
+                class="rounded-full cursor-pointer transition-all duration-400 ease-linear relative"
+                :class="formOpen ? 'left-5 rotate-45' : 'left-1/2'"
+                :ui="{ 'leadingIcon': 'size-8 text-white', 'base': 'bg-red-600 hover:bg-red-700 active:bg-red-700 disabled:bg-red-700 aria-disabled:bg-red-700 focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-red-700' }"
+                @click="toggleFormBuild"
+            />
+        </UTooltip>
     </div>
     <UForm
         class="flex flex-col pb-10 pt-20 gap-y-2 border-x border-b border-gray-800 relative form_animated"
