@@ -15,7 +15,7 @@
     const actualTooltipBuild = ref(tooltipTextsBuild[0]);
     async function copyBuild()
     {
-        await navigator.clipboard.writeText(buildValue);
+        await navigator.clipboard.writeText(build.build?.buildTemplate || "");
         actualTooltipBuild.value = tooltipTextsBuild[1];
     }
     function resetCopyBuild()
@@ -27,7 +27,7 @@
     const actualTooltipStyle = ref(tooltipTextsStyle[0]);
     async function copyStyle()
     {
-        await navigator.clipboard.writeText(styleValue);
+        await navigator.clipboard.writeText(build.build?.styleTemplate || "");
         actualTooltipStyle.value = tooltipTextsStyle[1];
     }
     function resetCopyStyle()
@@ -42,13 +42,13 @@
 </script>
 
 <template>
-    <div class="cell rounded">
-        <div class="cell-header" @click="toggleOpen">
+    <div class="book rounded">
+        <div class="book-header" @click="toggleOpen">
             <EliteIcon />
             <div class="name">
-                <UTooltip :text="buildName" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
+                <UTooltip :text="build.build?.title" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
                     <div class="name-text">
-                        {{ buildName }}
+                        {{ build.build?.title }}
                     </div>
                 </UTooltip>
             </div>
@@ -70,7 +70,7 @@
                 <UIcon size="25" name="material-symbols:keyboard-arrow-down-rounded" v-if="!isOpen" />
             </div>
         </div>
-        <UCollapsible class="cell-body" :class="isOpen ? 'p-1' : 'p-0'"
+        <UCollapsible class="book-body" :class="isOpen ? 'p-1' : 'p-0'"
             :unmount-on-hide="false"
             v-model:open="isOpen"
         >
@@ -81,20 +81,18 @@
     </div>
 </template>
 
-<style lang="scss">
-    .cell
+<style lang="scss" scoped>
+    .book
     {
-        border: 1px solid var(--color-gray-400);
-
         display: flex;
         flex-direction: column;
 
-        .cell-header
+        .book-header
         {
             display: flex;
             align-items: center;
             column-gap: 5px;
-            padding: 10px;
+            padding: 10px 0px 10px 5px;
 
             &:hover
             {
@@ -122,12 +120,17 @@
                 column-gap: 0px;
                 flex-shrink: 0;
             }
-            .icon:hover
+        }
+    }
+</style>
+<style lang="scss">
+    .book
+    {
+        .actions
+        {
+            & button:hover
             {
-                &:hover
-                {
-                    cursor: pointer;
-                }
+                cursor: pointer;
             }
         }
     }

@@ -2,6 +2,7 @@
     import { GW2_PROFESSION_OPTIONS } from '@/utils/gw2';
     import BuildCase from './BuildCase.vue';
     import { type Build } from '@/shared/prisma';
+    import { type Profession } from '@/types/profession';
 
     interface BuildsByProfession {
         builds: Record<number, Build[]>
@@ -27,7 +28,7 @@
 
 <template>
     <div class="shelf">
-        <BuildCase v-for="profession in GW2_PROFESSION_OPTIONS" :builds="buildsByProf.builds[profession.value]" :profession="profession.label" />
+        <BuildCase v-for="profession in (GW2_PROFESSION_OPTIONS as Profession[])" :builds="buildsByProf.builds[profession.value]" :profession="profession" />
     </div>
 </template>
 
