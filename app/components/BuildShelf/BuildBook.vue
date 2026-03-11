@@ -4,12 +4,7 @@
     import type { Build } from '@/shared/prisma';
 
     const build = defineProps<{ build?: Build }>();
-
-    const buildName: string = "Power Troubadour de la mort qui tue de tout et walah";
-
     const isOpen = ref(false);
-    const buildValue: string = "[&DQcBHQoaSRcjDwAAZh0AAFMdAABpAQAAbR0AAAAAAAAAAAAAAAAAAAAAAAADWQAFAGYAAA==]";
-    const styleValue: string = "[&DwAAqyQBAAEAAQABAHoCRQVQAnMCAQBbIEUFRQVFBUUFcwJzArAFAgBMANUkRQWwBdkEAgDdIMgBsAVWAXMCWgBzAkUFcwIBAAAAAQABAAEAAQAAAAAATyMvEFEhAAD9fw==]";
 
     const tooltipTextsBuild = ["Copier Build", "Build copié !"];
     const actualTooltipBuild = ref(tooltipTextsBuild[0]);
@@ -44,7 +39,7 @@
 <template>
     <div class="book rounded">
         <div class="book-header" @click="toggleOpen">
-            <EliteIcon />
+            <EliteIcon :specid="build.build?.buildSpec" />
             <div class="name">
                 <UTooltip :text="build.build?.title" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
                     <div class="name-text">

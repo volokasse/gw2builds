@@ -1,0 +1,1594 @@
+[
+    {
+        "id": 99965,
+        "name": "Relique des ouailles",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2F7AE267BA29B35DEC7F2C0FCE5C30D806E31E0D\/3122350.png",
+        "details": null
+    },
+    {
+        "id": 99997,
+        "name": "Relique d'Isgarren",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/5FB808F04E427650A84031E46B632DC292A3583F\/3122354.png",
+        "details": null
+    },
+    {
+        "id": 100031,
+        "name": "Relique de moine",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/6C340014C525FEF8089AC6DAD03662637A5B07CA\/3122361.png",
+        "details": null
+    },
+    {
+        "id": 100048,
+        "name": "Relique de glace",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/5E0E012F921D3D5D364BFEFC04D7BEF1DC5B52F7\/3122353.png",
+        "details": null
+    },
+    {
+        "id": 100063,
+        "name": "Relique de montée en puissance",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/755D9F3BA1C2C42CDAEBF59BBF4564B77ADC105D\/3592840.png",
+        "details": null
+    },
+    {
+        "id": 100074,
+        "name": "Relique de Cérus",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/656FCA9408A0FFDB35A3CE20311E0F66423F026B\/3122337.png",
+        "details": null
+    },
+    {
+        "id": 100090,
+        "name": "Relique du draconnier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/F61EEC535059F1FA027049AB4DEFCD5465405DB7\/3122344.png",
+        "details": null
+    },
+    {
+        "id": 100115,
+        "name": "Relique de Mabon",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/49481C31650D384B68A1BFB53DC1A39F2AE4AD56\/3122358.png",
+        "details": null
+    },
+    {
+        "id": 100144,
+        "name": "Relique de guerrier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/1D3CF82C05450A605921F6EB9D0AC23421C9CFA5\/3122375.png",
+        "details": null
+    },
+    {
+        "id": 100148,
+        "name": "Relique de vitesse",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/15B07C1813B63DFD27A6A8A5E36CF1BC50DB0562\/3122369.png",
+        "details": null
+    },
+    {
+        "id": 100153,
+        "name": "Relique de fractale",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B2D409644147BF18935A95A52505ABCB9EECE142\/3122351.png",
+        "details": null
+    },
+    {
+        "id": 100158,
+        "name": "Relique du Mirage",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/5FCA620E77D3D5022ADC70C1191F0B154AB13827\/3122360.png",
+        "details": null
+    },
+    {
+        "id": 100165,
+        "name": "Relique de nécromant",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B20C589B0915915F5AB55BDA6EC52670B29706F2\/3122362.png",
+        "details": null
+    },
+    {
+        "id": 100177,
+        "name": "Relique de Peitha",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/949A6A4179F514FCDEF3AC3D9C292B38D5E0047D\/3122365.png",
+        "details": null
+    },
+    {
+        "id": 100194,
+        "name": "Relique du Tissesort",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/12997110B0509463DD9F1364A92493B2C4309BE1\/3122377.png",
+        "details": null
+    },
+    {
+        "id": 100219,
+        "name": "Relique du héraut",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/DE62250A48F802DD09A1FAFF0D2BA804EA29A3B9\/3122352.png",
+        "details": null
+    },
+    {
+        "id": 100230,
+        "name": "Relique de Krait",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/645EFCBFFBB7B1C6630CBB7C0FB268CA27B703AC\/3122355.png",
+        "details": null
+    },
+    {
+        "id": 100238,
+        "name": "Relique de la liche",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/045D16259918EFA90A76B4D1B1400AA8D9CC0D4B\/3592837.png",
+        "details": null
+    },
+    {
+        "id": 100248,
+        "name": "Relique de la Citadelle",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B21C5A6DFCDB0A729358A22CA76547150E7C541E\/3122339.png",
+        "details": null
+    },
+    {
+        "id": 100262,
+        "name": "Relique de feux d'artifice",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2999CCF7C94267B2EE3DDA7459050864622927C9\/3122349.png",
+        "details": null
+    },
+    {
+        "id": 100299,
+        "name": "Relique de guerrier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/1D3CF82C05450A605921F6EB9D0AC23421C9CFA5\/3122375.png",
+        "details": null
+    },
+    {
+        "id": 100311,
+        "name": "Relique d'Ogre",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/633231B05DC3D1D44003DAA891400C4624180D17\/3592838.png",
+        "details": null
+    },
+    {
+        "id": 100345,
+        "name": "Relique du fracasseur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/29FE690460A037C7FAC3C71903BA1EBECB204012\/3122341.png",
+        "details": null
+    },
+    {
+        "id": 100368,
+        "name": "Relique du Fléau",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0802B36898A6EB0C77D20FD4F3DFD0A2270A3ECD\/3122368.png",
+        "details": null
+    },
+    {
+        "id": 100385,
+        "name": "Relique du Centaure",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/59551CFA6F4AB3D678370651ABF20D5F69B949D5\/3122336.png",
+        "details": null
+    },
+    {
+        "id": 100388,
+        "name": "Relique de la Garde astrale",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/57A961A8ADFE279BC4F124A40CC4B5646BC8035F\/3161446.png",
+        "details": null
+    },
+    {
+        "id": 100390,
+        "name": "Relique d'antitoxine",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/61C74AAFED48CF9AD4BBCAD89F902654EA02B2AE\/3122331.png",
+        "details": null
+    },
+    {
+        "id": 100400,
+        "name": "Relique du Sans-soleil",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CEF1E6DA2DBF143661DF26E668034A621812B61A\/3122370.png",
+        "details": null
+    },
+    {
+        "id": 100403,
+        "name": "Relique de golemancien",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/13412697BB6AD89F2E6ED97A750873C0BB35AA9A\/3592835.png",
+        "details": null
+    },
+    {
+        "id": 100411,
+        "name": "Relique de fantassin",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/500CB9B12FED6948EB74FAF299726007002BDFBA\/3122372.png",
+        "details": null
+    },
+    {
+        "id": 100429,
+        "name": "Relique de pitié",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/1AA33B5654D3E7F91B9065BA6D0F1EB6AA755AFF\/3122359.png",
+        "details": null
+    },
+    {
+        "id": 100432,
+        "name": "Relique d'Akeem",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/594C437E9606A167F4F372BCEB0C2B7C7828037B\/3122330.png",
+        "details": null
+    },
+    {
+        "id": 100435,
+        "name": "Relique de terre",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/EBB3060FF2E9A10CECC3F1B2CAC0213AE9D93337\/3592833.png",
+        "details": null
+    },
+    {
+        "id": 100442,
+        "name": "Relique de Dwayna",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CBBD4FAFCC3568ACA04F9901162FE7C0747C1E9B\/3122346.png",
+        "details": null
+    },
+    {
+        "id": 100448,
+        "name": "Relique de la Citadelle",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B21C5A6DFCDB0A729358A22CA76547150E7C541E\/3122339.png",
+        "details": null
+    },
+    {
+        "id": 100450,
+        "name": "Relique du chronomancien",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/C209ABF01D7429EC09354E2E0BBF9DB14EBDD613\/3122338.png",
+        "details": null
+    },
+    {
+        "id": 100453,
+        "name": "Relique de l'Incendiaire",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/4E4F4AA81DB63D9D9BB4BF3757D0750E935701F7\/3122348.png",
+        "details": null
+    },
+    {
+        "id": 100455,
+        "name": "Relique de durabilité",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/A8F61493030863CAB537780398D64D80554D959D\/3122345.png",
+        "details": null
+    },
+    {
+        "id": 100461,
+        "name": "Relique de Lyhr",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/FE580A90C9E4513D062A148045F933C7F3C557E3\/3122357.png",
+        "details": null
+    },
+    {
+        "id": 100479,
+        "name": "Relique de corsaire",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/9CE01CF33B943BCC3FABD8491073DE0AD63F340C\/3592839.png",
+        "details": null
+    },
+    {
+        "id": 100527,
+        "name": "Relique de bagarreur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2B5297A932F55DA3BDDD0A39C9CB0D9CF70244A1\/3122334.png",
+        "details": null
+    },
+    {
+        "id": 100531,
+        "name": "Relique d'eau",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/A202CF0CF4314C049B16A89A595CCC9534B0A90E\/3122376.png",
+        "details": null
+    },
+    {
+        "id": 100542,
+        "name": "Relique de Cavalier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/C3AFC50F654E2749ADD9033CE007033F6F9B0D7A\/3122335.png",
+        "details": null
+    },
+    {
+        "id": 100557,
+        "name": "Relique de la Tour du sorcier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0C0EE407B9DAA44438ED6C2DCDA4EEB30953DF1B\/3122378.png",
+        "details": null
+    },
+    {
+        "id": 100561,
+        "name": "Relique d'aventurier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/9A76D8C27FCAB8F66D0DC531906808B134D80EAD\/3122328.png",
+        "details": null
+    },
+    {
+        "id": 100562,
+        "name": "Relique de durabilité",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/A8F61493030863CAB537780398D64D80554D959D\/3122345.png",
+        "details": null
+    },
+    {
+        "id": 100579,
+        "name": "Relique des Cauchemars",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/74940C36779745CBA9DDD56CDF6CBAC1CEA8179F\/3122363.png",
+        "details": null
+    },
+    {
+        "id": 100580,
+        "name": "Relique de nécromant",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B20C589B0915915F5AB55BDA6EC52670B29706F2\/3122362.png",
+        "details": null
+    },
+    {
+        "id": 100614,
+        "name": "Relique de dérobade",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/19296379D120EF9FF10EE0B0CDD7711DA5E7A9AF\/3122347.png",
+        "details": null
+    },
+    {
+        "id": 100625,
+        "name": "Relique de charisme",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/077C30D957D30B0D282BB21199A193A2D74971DF\/3122356.png",
+        "details": null
+    },
+    {
+        "id": 100633,
+        "name": "Relique des ouailles",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2F7AE267BA29B35DEC7F2C0FCE5C30D806E31E0D\/3122350.png",
+        "details": null
+    },
+    {
+        "id": 100659,
+        "name": "Relique d'eau",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/A202CF0CF4314C049B16A89A595CCC9534B0A90E\/3122376.png",
+        "details": null
+    },
+    {
+        "id": 100676,
+        "name": "Relique de vampirisme",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/349D3B9098A1EB445E00C45E70B892E8CFE3762C\/3592842.png",
+        "details": null
+    },
+    {
+        "id": 100693,
+        "name": "Relique des Affligés",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/3B1DA625E3DF0591087E62F12E5301C1D8D6EDC0\/3122329.png",
+        "details": null
+    },
+    {
+        "id": 100694,
+        "name": "Relique de l'invasion invisible",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0CAF5ACE9D4ABEFF3EF2DE0DB47D57A8AB3CABB3\/3122373.png",
+        "details": null
+    },
+    {
+        "id": 100739,
+        "name": "Relique du faucheur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/AFDAA23D3C61F202225DDFA7C17F420C5368BBB8\/3122366.png",
+        "details": null
+    },
+    {
+        "id": 100752,
+        "name": "Relique de la meute",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/26503D1FF7BA354058789E371992A7500B3AA89B\/3122364.png",
+        "details": null
+    },
+    {
+        "id": 100775,
+        "name": "Relique de Vass",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/21D7FDF1DD4EAD33DBC01F11D80E48AD3370FDE6\/3122374.png",
+        "details": null
+    },
+    {
+        "id": 100794,
+        "name": "Relique de résistance",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/C3A39C916063067E190EE5D42D6CAC2018385F44\/3122367.png",
+        "details": null
+    },
+    {
+        "id": 100849,
+        "name": "Relique d'aristocratie",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/BCC01F0B6616FE26ED4BE159532A6A6FBD0EA2D8\/3122332.png",
+        "details": null
+    },
+    {
+        "id": 100886,
+        "name": "Relique de dérobade",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/19296379D120EF9FF10EE0B0CDD7711DA5E7A9AF\/3122347.png",
+        "details": null
+    },
+    {
+        "id": 100893,
+        "name": "Relique des Zéphyrites",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/070E32046C250E32DA76F2CBDFC504D6C0AB0344\/3122379.png",
+        "details": null
+    },
+    {
+        "id": 100908,
+        "name": "Relique de l'Holographiste",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0976F60805023D2F14DA6CC72F55F3D64407C7AF\/3592836.png",
+        "details": null
+    },
+    {
+        "id": 100916,
+        "name": "Relique de voleur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/3523AC08EB04347CF371E9A91F4B985D12FB4ED3\/3122371.png",
+        "details": null
+    },
+    {
+        "id": 100924,
+        "name": "Relique du Sniper",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/060151B961CE56CB9546E7B6AF33B0A318426372\/3122342.png",
+        "details": null
+    },
+    {
+        "id": 100934,
+        "name": "Relique du Défenseur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/E854AFDE03F40ED335C0A30DE90BD9973612BD75\/3122343.png",
+        "details": null
+    },
+    {
+        "id": 100942,
+        "name": "Relique de Dagda",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CA28F7BFEA1B695DD19204E455BA270D334EE307\/3122340.png",
+        "details": null
+    },
+    {
+        "id": 100947,
+        "name": "Relique de feux d'artifice",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2999CCF7C94267B2EE3DDA7459050864622927C9\/3122349.png",
+        "details": null
+    },
+    {
+        "id": 100976,
+        "name": "Relique de voleur",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/3523AC08EB04347CF371E9A91F4B985D12FB4ED3\/3122371.png",
+        "details": null
+    },
+    {
+        "id": 101116,
+        "name": "Relique de Febe",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/3B063D0B0BA20A0530086595F367F0149D9679F2\/3187628.png",
+        "details": null
+    },
+    {
+        "id": 101139,
+        "name": "Relique du Roi de minuit",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/C0602C3D27B10AC815D4B9F0DF0E4C3D23D12E9F\/3187630.png",
+        "details": null
+    },
+    {
+        "id": 101166,
+        "name": "Relique de la Reine des démons",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/D0C6F322473F2A0F6C65FBD3B21733777BB14015\/3187627.png",
+        "details": null
+    },
+    {
+        "id": 101191,
+        "name": "Relique de Nourys",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/9B47CEBB551B7C5E7A961AB45361E292074E0823\/3187632.png",
+        "details": null
+    },
+    {
+        "id": 101198,
+        "name": "Relique de Nayos",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/EA382BAFD541080F71D5530893CC7E069165EA0C\/3187631.png",
+        "details": null
+    },
+    {
+        "id": 101268,
+        "name": "Relique de Karakosa",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/DD034A0B53355503350F07CCFFE5CC06A90F41D9\/3187629.png",
+        "details": null
+    },
+    {
+        "id": 101439,
+        "name": "Relique de pitié",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101441,
+        "name": "Relique de dérobade",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101442,
+        "name": "Relique de vitesse",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101447,
+        "name": "Relique de la meute",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101452,
+        "name": "Relique de l'Incendiaire",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101453,
+        "name": "Relique des Cauchemars",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101461,
+        "name": "Relique de charisme",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101465,
+        "name": "Relique de nécromant",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101466,
+        "name": "Relique de résistance",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101467,
+        "name": "Relique de la Reine des démons",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101472,
+        "name": "Relique du faucheur",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101474,
+        "name": "Relique d'eau",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101487,
+        "name": "Relique d'antitoxine",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101489,
+        "name": "Relique de fractale",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101491,
+        "name": "Relique de Dagda",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101492,
+        "name": "Relique de Vass",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101493,
+        "name": "Relique des Affligés",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101500,
+        "name": "Relique de Cérus",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101503,
+        "name": "Relique de Nourys",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101504,
+        "name": "Relique de durabilité",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101509,
+        "name": "Relique du héraut",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101511,
+        "name": "Relique d'aventurier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101513,
+        "name": "Relique du Défenseur",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101514,
+        "name": "Relique de Dwayna",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101526,
+        "name": "Relique du Tissesort",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101527,
+        "name": "Relique des ouailles",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101534,
+        "name": "Relique de Cavalier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101539,
+        "name": "Relique d'aristocratie",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101541,
+        "name": "Relique du Sans-soleil",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101545,
+        "name": "Relique de guerrier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101546,
+        "name": "Relique de Karakosa",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101549,
+        "name": "Relique du chronomancien",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101554,
+        "name": "Relique de fantassin",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101563,
+        "name": "Relique de Febe",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101564,
+        "name": "Relique de feux d'artifice",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101571,
+        "name": "Relique de l'invasion invisible",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101573,
+        "name": "Relique d'Akeem",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101580,
+        "name": "Relique de voleur",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101581,
+        "name": "Relique du Mirage",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101582,
+        "name": "Relique légendaire",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101586,
+        "name": "Relique de la Tour du sorcier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101590,
+        "name": "Relique du draconnier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101600,
+        "name": "Relique de bagarreur",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101605,
+        "name": "Relique de Lyhr",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101607,
+        "name": "Relique du Centaure",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101608,
+        "name": "Relique de glace",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101611,
+        "name": "Relique de Peitha",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101618,
+        "name": "Relique des Zéphyrites",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101619,
+        "name": "Relique de la Garde astrale",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101621,
+        "name": "Relique du Roi de minuit",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101627,
+        "name": "Relique de Nayos",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101630,
+        "name": "Relique de moine",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101634,
+        "name": "Relique du Fléau",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101637,
+        "name": "Relique du Sniper",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101640,
+        "name": "Relique de Krait",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101643,
+        "name": "Relique de Mabon",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101644,
+        "name": "Relique du fracasseur",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101647,
+        "name": "Relique de la Citadelle",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101649,
+        "name": "Relique d'Isgarren",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101731,
+        "name": "Relique des généraux jumeaux",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101737,
+        "name": "Relique de la fondation",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/FD9FE6B8CBBD44132D6DBCA7C2E92CF4C69D6EDC\/3302016.png",
+        "details": null
+    },
+    {
+        "id": 101767,
+        "name": "Relique des généraux jumeaux",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CCEC5A2802D7B7D6C891EA730B5733ADD912B902\/3302019.png",
+        "details": null
+    },
+    {
+        "id": 101776,
+        "name": "Relique de la fondation",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101801,
+        "name": "Relique de Mosyn",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CAB064E2F11609D2309E356062BA93107F9F605E\/3302017.png",
+        "details": null
+    },
+    {
+        "id": 101860,
+        "name": "Relique de Mosyn",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101863,
+        "name": "Relique du sorcier",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/AC943ADC1ABD046294600DDBEFE8636FF90C4EEF\/3302018.png",
+        "details": null
+    },
+    {
+        "id": 101908,
+        "name": "Relique du sorcier",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101917,
+        "name": "Relique du Guide",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101943,
+        "name": "Relique du Guide",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/7D28503433AD96CEA902BBCD0411C9BE1D2505F4\/3302020.png",
+        "details": null
+    },
+    {
+        "id": 101944,
+        "name": "Relique de Zakiros",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 101955,
+        "name": "Relique de Zakiros",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/5A5B5D3A4D9DD01F0A115030270A0A6EA353CC65\/3302021.png",
+        "details": null
+    },
+    {
+        "id": 102199,
+        "name": "Relique du porte-fléau",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/286C60AC6FA239B0070293039091A44476A35E90\/3375219.png",
+        "details": null
+    },
+    {
+        "id": 102245,
+        "name": "Relique d'atrocité",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/F1F3033EA7780C093A651253ACB92E415C0525F6\/3375218.png",
+        "details": null
+    },
+    {
+        "id": 102442,
+        "name": "Relique des rivières",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 102595,
+        "name": "Relique de l'antienne de la tempête",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/53B8A123D07CC679364EF4CF4BD7537624320919\/3375223.png",
+        "details": null
+    },
+    {
+        "id": 102787,
+        "name": "Relique d'atrocité",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 102877,
+        "name": "Relique de la Griffe",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 102896,
+        "name": "Relique du porte-fléau",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103015,
+        "name": "Relique des rivières",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/4C054AF70F0CE14E46B159686F1AA70A320A1E07\/3375221.png",
+        "details": null
+    },
+    {
+        "id": 103262,
+        "name": "Relique de l'antienne de la tempête",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103424,
+        "name": "Relique des lamentations",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/F943C04CD27C463AB167FDF49F9CCC3E27F0AD18\/3375222.png",
+        "details": null
+    },
+    {
+        "id": 103507,
+        "name": "Relique des lamentations",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103574,
+        "name": "Relique de la Griffe",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/19B5DB56E495C70754A8BE3621CADC0FD7402845\/3375220.png",
+        "details": null
+    },
+    {
+        "id": 103763,
+        "name": "Relique des geysers",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/CEDCA7097F41AD0715322E440ABDCE1E6FF49178\/3441971.png",
+        "details": null
+    },
+    {
+        "id": 103811,
+        "name": "Relique de la vapeur fulminante",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103829,
+        "name": "Relique des geysers",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103872,
+        "name": "Relique du mont Balrior",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/49A8520BDB6C5A7BA90832DB9406677473A6932F\/3441973.png",
+        "details": null
+    },
+    {
+        "id": 103901,
+        "name": "Relique de la marée des Brumes",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2ADA1A4509057D7B3854EEE9149A0F45CCD0EAA2\/3441972.png",
+        "details": null
+    },
+    {
+        "id": 103923,
+        "name": "Relique de la ruche",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103924,
+        "name": "Relique de la réunification",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103941,
+        "name": "Relique de la marée des Brumes",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 103977,
+        "name": "Relique de la ruche",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0D45B8A4A1D8D7FF4BAE196091C76A961D3F9621\/3441970.png",
+        "details": null
+    },
+    {
+        "id": 103984,
+        "name": "Relique de la réunification",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/DDC5C072A8E0566CFFF1200404E529DADCD27CF3\/3441974.png",
+        "details": null
+    },
+    {
+        "id": 104022,
+        "name": "Relique de la vapeur fulminante",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/23B0F0A5BF05E05C9F527BF7EB4962C9F49C6F42\/3441975.png",
+        "details": null
+    },
+    {
+        "id": 104035,
+        "name": "Relique du mont Balrior",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104241,
+        "name": "Relique de l'aigle",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/DFF4EB43AD0803F60D105658052321A0BE1AF02C\/3592832.png",
+        "details": null
+    },
+    {
+        "id": 104249,
+        "name": "Relique de vampirisme",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104256,
+        "name": "Relique d'altruisme",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/DA14C9FCAB15E43203F1FEEBE432C3B3FBAB00DD\/3592831.png",
+        "details": null
+    },
+    {
+        "id": 104274,
+        "name": "Relique de montée en puissance",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104277,
+        "name": "Relique de la liche",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104296,
+        "name": "Relique des épines",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104308,
+        "name": "Relique de feu",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104311,
+        "name": "Relique de corsaire",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104334,
+        "name": "Relique d'Ogre",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104383,
+        "name": "Relique de terre",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104390,
+        "name": "Relique de l'Holographiste",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104413,
+        "name": "Relique de l'aigle",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104416,
+        "name": "Relique de golemancien",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104424,
+        "name": "Relique des épines",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/B6166933459C27FE500FCC23B572A7AE2A0F4DDA\/3592841.png",
+        "details": null
+    },
+    {
+        "id": 104491,
+        "name": "Relique d'altruisme",
+        "type": "Relic",
+        "rarity": "Legendary",
+        "icon": "https:\/\/render.guildwars2.com\/file\/08DED07BF6DF37E69A08D1C49D9C45D81BD8A5CA\/3255567.png",
+        "details": null
+    },
+    {
+        "id": 104501,
+        "name": "Relique de feu",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/00E5051DCC0EDD58395DF9CEA3456466EA4FD347\/3592834.png",
+        "details": null
+    },
+    {
+        "id": 104733,
+        "name": "Relique du Prodige",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/AD0AE5035A197220507642E1169ED55E0C58A29D\/3629400.png",
+        "details": null
+    },
+    {
+        "id": 104800,
+        "name": "Relique de la pierre de sang",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/A7327A7EDB4705EA05261110526D72AFEAF7DAB4\/3629397.png",
+        "details": null
+    },
+    {
+        "id": 104848,
+        "name": "Relique de Bava Nisos",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/213C437140552326BD633D1AFF150B48DF2EB544\/3629396.png",
+        "details": null
+    },
+    {
+        "id": 104849,
+        "name": "Relique de l'agonie",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/7060CF69EFEB7A99150F2F1A7E0E1F1D2D9ED0D2\/3629395.png",
+        "details": null
+    },
+    {
+        "id": 104928,
+        "name": "Relique de la cité vivante",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/6CAF0358FBD9DDD84AB3302E2D67329A3AA83DEC\/3629398.png",
+        "details": null
+    },
+    {
+        "id": 104938,
+        "name": "Relique de la cité vivante",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/6CAF0358FBD9DDD84AB3302E2D67329A3AA83DEC\/3629398.png",
+        "details": null
+    },
+    {
+        "id": 104994,
+        "name": "Relique du Feu-de-Brume",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/FFCB62CF19806066D21C0EA1BA43986C0DA2B6F3\/3629399.png",
+        "details": null
+    },
+    {
+        "id": 105585,
+        "name": "Relique du premier revenant",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/7DA30BCFB0E0A04A5D3DFE3D25DAF142D90E1596\/3709380.png",
+        "details": null
+    },
+    {
+        "id": 105652,
+        "name": "Relique de Castora",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/349EA123E7D870C4199AB268250973FAEC0ADC94\/3709379.png",
+        "details": null
+    },
+    {
+        "id": 106206,
+        "name": "Relique de l'Étranger des Brumes",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/2DA75566B948AADFAB0CCF2198F205AF9AE82031\/3709381.png",
+        "details": null
+    },
+    {
+        "id": 106221,
+        "name": "Relique de la reine pirate",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/6C7D53936BFC0DFD52BACDD9A2C7F0909E424F0D\/3709382.png",
+        "details": null
+    },
+    {
+        "id": 106355,
+        "name": "Relique du vaurien",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/0B58A2B6F00D9657EE141001A8AA240DDBDE300D\/3709383.png",
+        "details": null
+    },
+    {
+        "id": 106364,
+        "name": "Relique du biomancien",
+        "type": "Relic",
+        "rarity": "Exotic",
+        "icon": "https:\/\/render.guildwars2.com\/file\/5CF5F504B24F210BE209053D2134B89072FC4F29\/3709378.png",
+        "details": null
+    }
+]
