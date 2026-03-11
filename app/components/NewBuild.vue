@@ -162,7 +162,7 @@
 </script>
 
 <template>
-    <div class="absolute flex w-full top-0 mt-4 z-50 justify-start items-center">
+    <div class="absolute flex w-full top-0 mt-4 justify-start items-center z-1">
         <UTooltip text="Create Build" :content="{ align: 'center', side: 'bottom', sideOffset: 8 }" :delay-duration="0">
             <UButton
                 icon="i-heroicons:plus-20-solid"
