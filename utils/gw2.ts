@@ -374,3 +374,7 @@ export function getGW2Spec(specID: number)
         return specs[0];
     return undefined;
 }
+export function isSpecElite(specID: number)
+{
+    return GW2_SPECIALIZATIONS_ELITES.filter(sp => sp.id == specID).length > 0;
+}

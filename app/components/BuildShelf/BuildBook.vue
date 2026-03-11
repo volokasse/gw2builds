@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import EliteIcon from '../GW2Utils/EliteIcon.vue';
+    import ProfessionIcon from '../GW2Utils/ProfessionIcon.vue';
     import Placeholder from '../Dev/Placeholder.vue';
     import type { Build } from '@/shared/prisma';
 
@@ -40,6 +41,7 @@
     <div class="book rounded">
         <div class="book-header" @click="toggleOpen">
             <EliteIcon :specid="build.build?.buildSpec" />
+            <ProfessionIcon :professionid="build.build?.buildClass || 0" :specid="build.build?.buildSpec || 0" />
             <div class="name">
                 <UTooltip :text="build.build?.title" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
                     <div class="name-text">
