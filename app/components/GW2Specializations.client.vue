@@ -2,7 +2,8 @@
 import { ref, onMounted, watch, nextTick } from 'vue'
 
 const props = defineProps<{
-  specializations: Array<{ id: number; traits: number[] }>
+  specializations: Array<{ id: number; traits: number[] }>,
+  direction?:string
 }>()
 
 // prêt = le script armory-embeds est chargé
@@ -65,8 +66,8 @@ watch(
 
 <template>
   <!-- on ne rend rien tant que la lib n’est pas chargée -->
-  <div v-if="ready" ref="container" class="w-full gap-2">
-    <div class="max-h-[262px] md:max-h-[84px] w-full flex flex-col md:flex-row gap-2 items-center justify-center transform-[scale(.6)]">
+  <div v-if="ready" ref="container" class="w-full gap-2" :class="direction === undefined ? '' : 'column'">
+    <div class="max-h-65.5 md:max-h-21 w-full flex flex-col md:flex-row gap-2 items-center justify-center transform-[scale(.6)]">
       <div
         v-for="(spec, idx) in specializations"
         :key="spec.id || idx"
@@ -75,7 +76,7 @@ watch(
         v-bind="spec.traits && spec.traits.length
           ? { ['data-armory-' + spec.id + '-traits']: spec.traits.join(',') }
           : {}"
-        class="w-[500px] shrink-0"
+        class="w-125 shrink-0"
       ></div>
     </div>
   </div>
@@ -84,8 +85,20 @@ watch(
   </div>
 </template>
 
-<style scoped>
-.gw2-spec-list .armory-embed {
-  max-width: 100%;
-}
+<style lang="scss" scoped>
+  .gw2-spec-list .armory-embed {
+    max-width: 100%;
+  }
+  .column
+  {
+    position: relative;
+    top: -17px;
+    height: 260px;
+
+    & > div
+    {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
 </style>

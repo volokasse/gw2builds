@@ -80,7 +80,7 @@
         <div class="flex gap-2">
             <USelectMenu
                 v-model="globalSelected"
-                class="w-1/5 min-w-[200px]"
+                class="w-1/5 min-w-50"
                 variant="outline"
                 color="secondary"
                 :items="items"

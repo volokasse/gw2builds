@@ -2,9 +2,9 @@
     import { decode } from 'gw2e-chat-codes';
     import GW2Specializations from './GW2Specializations.client.vue';
     import NewBuildStats from './NewBuildStats.vue';
+    import { extractSpecs, isValidGW2Link } from '@/utils/gw2';
 
     /// Utilities
-    const GW2_LINK_REGEX       = /^\[\&[A-Za-z0-9+/=]+\]$/;
     const buildSpecializations = ref<Array<{ id: number; traits: number[] }>>([])
     const formOpen             = ref<boolean>(false);
     const statFormOpen         = ref<boolean>(false);
@@ -43,26 +43,13 @@
     async function updateBuildTemplate()
     {
         buildSpecializations.value = [];
-        if (buildTemplate.value == '')
-        {
-            buildSpecializations.value = [];
-            return;
-        }
-        if (!isValidGW2Link(buildTemplate.value))
-            return;
-
-        let buildInfos = decode(buildTemplate.value);
+        const buildInfos = decode(buildTemplate.value);
         if (buildInfos === false)
             return;
         if (buildInfos.type != "build")
             return;
 
-        const specs: number[] = [
-            buildInfos.specialization1,
-            buildInfos.specialization2,
-            buildInfos.specialization3
-        ].filter((n): n is number => typeof n === 'number' && n > 0);
-
+        const specs: number[] = extractSpecs(buildTemplate.value);
         const specsAPI = await $fetch('/api/gw2/specializations', {
             params: { ids: specs }
         });
@@ -149,10 +136,6 @@
         return result
     }
 
-    function isValidGW2Link(str: string): boolean {
-        return GW2_LINK_REGEX.test(str);
-    }
-
     function toggleFormBuild()
     {
         formOpen.value = !formOpen.value;
@@ -162,14 +145,16 @@
 </script>
 
 <template>
-    <div class="absolute flex w-full top-0 mt-4 z-50 justify-start items-center">
-        <UButton
-            icon="i-heroicons:plus-20-solid"
-            class="rounded-full cursor-pointer transition-all duration-400 ease-linear relative"
-            :class="formOpen ? 'left-5 rotate-45' : 'left-1/2'"
-            :ui="{ 'leadingIcon': 'size-8 text-white', 'base': 'bg-red-600 hover:bg-red-700 active:bg-red-700 disabled:bg-red-700 aria-disabled:bg-red-700 focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-red-700' }"
-            @click="toggleFormBuild"
-        />
+    <div class="absolute flex w-full top-0 mt-4 justify-start items-center z-1">
+        <UTooltip text="Create Build" :content="{ align: 'center', side: 'bottom', sideOffset: 8 }" :delay-duration="0">
+            <UButton
+                icon="i-heroicons:plus-20-solid"
+                class="rounded-full cursor-pointer transition-all duration-400 ease-linear relative"
+                :class="formOpen ? 'left-5 rotate-45' : 'left-1/2'"
+                :ui="{ 'leadingIcon': 'size-8 text-white', 'base': 'bg-red-600 hover:bg-red-700 active:bg-red-700 disabled:bg-red-700 aria-disabled:bg-red-700 focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-red-700' }"
+                @click="toggleFormBuild"
+            />
+        </UTooltip>
     </div>
     <UForm
         class="flex flex-col pb-10 pt-20 gap-y-2 border-x border-b border-gray-800 relative form_animated"

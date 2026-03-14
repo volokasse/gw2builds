@@ -56,7 +56,7 @@ async function logout()
       </main>
 
       <!-- Footer -->
-      <footer class="border-t border-gray-800 text-center text-[11px] text-gray-500 py-4">
+      <footer class="border-t border-gray-800 text-center text-[11px] text-gray-500 py-4 mt-10">
         <p>GW2 Builds — prototype</p>
         <p class="opacity-60">Stocke, partage et explore des builds Guild Wars 2.</p>
       </footer>

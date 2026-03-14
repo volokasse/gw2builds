@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../shared/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  // Relations
+  builds Build[]
+}
+
+model Build {
+  id             Int      @id @default(autoincrement())
+  title          String
+  styleTemplate  String   @default("")
+  buildTemplate  String
+  buildClass     Int      @default(0)
+  buildSpec      Int      @default(0)
+  buildEquipment String   @db.LongText
+  isPublic       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  slug           String?  @unique @db.VarChar(5)
+
+  // FK vers User
+  owner   User @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  ownerId Int
+}
+
+model Gw2Cache {
+  key       String   @id
+  data      String   @db.LongText
+  updatedAt DateTime @updatedAt
+}

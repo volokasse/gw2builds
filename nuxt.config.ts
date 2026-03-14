@@ -8,6 +8,15 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/ui'],
   css: ['~/assets/css/main.css'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;'
+        }
+      }
+    }
+  },
 
   typescript: {
     strict: true,

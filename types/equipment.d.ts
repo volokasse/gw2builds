@@ -5,6 +5,7 @@ export interface GW2_Equipments {
   gloves: number | undefined
   leggings: number | undefined
   boots: number | undefined
+  rune: number | undefined
   backpiece: number | undefined
   accessory1: number | undefined
   accessory2: number | undefined
@@ -16,4 +17,5 @@ export interface GW2_Equipments {
   mainHand2: number | undefined
   offHand2: number | undefined
   relic: number | undefined
+  sigil: number | undefined
 }
