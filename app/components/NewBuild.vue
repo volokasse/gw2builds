@@ -2,9 +2,9 @@
     import { decode } from 'gw2e-chat-codes';
     import GW2Specializations from './GW2Specializations.client.vue';
     import NewBuildStats from './NewBuildStats.vue';
+    import { extractSpecs, isValidGW2Link } from '@/utils/gw2';
 
     /// Utilities
-    const GW2_LINK_REGEX       = /^\[\&[A-Za-z0-9+/=]+\]$/;
     const buildSpecializations = ref<Array<{ id: number; traits: number[] }>>([])
     const formOpen             = ref<boolean>(false);
     const statFormOpen         = ref<boolean>(false);
@@ -43,26 +43,13 @@
     async function updateBuildTemplate()
     {
         buildSpecializations.value = [];
-        if (buildTemplate.value == '')
-        {
-            buildSpecializations.value = [];
-            return;
-        }
-        if (!isValidGW2Link(buildTemplate.value))
-            return;
-
-        let buildInfos = decode(buildTemplate.value);
+        const buildInfos = decode(buildTemplate.value);
         if (buildInfos === false)
             return;
         if (buildInfos.type != "build")
             return;
 
-        const specs: number[] = [
-            buildInfos.specialization1,
-            buildInfos.specialization2,
-            buildInfos.specialization3
-        ].filter((n): n is number => typeof n === 'number' && n > 0);
-
+        const specs: number[] = extractSpecs(buildTemplate.value);
         const specsAPI = await $fetch('/api/gw2/specializations', {
             params: { ids: specs }
         });
@@ -147,10 +134,6 @@
         }
 
         return result
-    }
-
-    function isValidGW2Link(str: string): boolean {
-        return GW2_LINK_REGEX.test(str);
     }
 
     function toggleFormBuild()

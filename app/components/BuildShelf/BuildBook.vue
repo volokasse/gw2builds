@@ -1,17 +1,35 @@
 <script setup lang="ts">
     import EliteIcon from '../GW2Utils/EliteIcon.vue';
     import ProfessionIcon from '../GW2Utils/ProfessionIcon.vue';
-    import Placeholder from '../Dev/Placeholder.vue';
+    import BodyGear from '../Gear/BodyGear.vue';
+    import BlingGear from '../Gear/BlingGear.vue';
+    import SwapsGear from '../Gear/SwapsGear.vue';
     import type { Build } from '@/shared/prisma';
+    import GW2SpecializationsClient from '../GW2Specializations.client.vue';
+    import { getBuildDisplay } from '@/utils/gw2';
+    import { WeaponSwap, type WeaponSwapDTO } from '@/shared/Weapon';
 
-    const build = defineProps<{ build?: Build }>();
+    const props = defineProps<{ build: Build }>();
     const isOpen = ref(false);
+    const buildDisplay = await getBuildDisplay(props.build.buildTemplate);
+
+    type BuildEquipmentDTO = { weapons?: WeaponSwapDTO[] };
+    const equipment = computed<BuildEquipmentDTO>(() => {
+        try {
+            return JSON.parse(props.build.buildEquipment) as BuildEquipmentDTO;
+        } catch {
+            return {};
+        }
+    });
+    const weaponSwaps = computed<WeaponSwap[]>(() => {
+        return (equipment.value.weapons ?? []).map(WeaponSwap.fromDTO);
+    });
 
     const tooltipTextsBuild = ["Copier Build", "Build copié !"];
     const actualTooltipBuild = ref(tooltipTextsBuild[0]);
     async function copyBuild()
     {
-        await navigator.clipboard.writeText(build.build?.buildTemplate || "");
+        await navigator.clipboard.writeText(props.build?.buildTemplate || "");
         actualTooltipBuild.value = tooltipTextsBuild[1];
     }
     function resetCopyBuild()
@@ -23,7 +41,7 @@
     const actualTooltipStyle = ref(tooltipTextsStyle[0]);
     async function copyStyle()
     {
-        await navigator.clipboard.writeText(build.build?.styleTemplate || "");
+        await navigator.clipboard.writeText(props.build?.styleTemplate || "");
         actualTooltipStyle.value = tooltipTextsStyle[1];
     }
     function resetCopyStyle()
@@ -40,12 +58,12 @@
 <template>
     <div class="book rounded">
         <div class="book-header" @click="toggleOpen">
-            <EliteIcon :specid="build.build?.buildSpec" />
-            <ProfessionIcon :professionid="build.build?.buildClass || 0" :specid="build.build?.buildSpec || 0" />
+            <EliteIcon :specid="build?.buildSpec" />
+            <ProfessionIcon :professionid="build?.buildClass || 0" :specid="build?.buildSpec || 0" />
             <div class="name">
-                <UTooltip :text="build.build?.title" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
+                <UTooltip :text="build?.title" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
                     <div class="name-text">
-                        {{ build.build?.title }}
+                        {{ build?.title }}
                     </div>
                 </UTooltip>
             </div>
@@ -55,7 +73,7 @@
                     <UButton class="icon rounded-full" icon="material-symbols:content-copy" size="md" color="neutral" variant="ghost" @click.stop="copyBuild" @mouseleave="resetCopyBuild" />
                 </UTooltip>
                 <!-- COPY STYLE -->
-                <UTooltip :text="actualTooltipStyle" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true" v-if="build.build?.styleTemplate.length">
+                <UTooltip :text="actualTooltipStyle" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true" v-if="build?.styleTemplate.length">
                     <UButton class="icon rounded-full" icon="material-symbols:content-copy-outline" size="md" color="neutral" variant="ghost" @click.stop="copyStyle" @mouseleave="resetCopyStyle" />
                 </UTooltip>
                 <!-- EDIT -->
@@ -68,11 +86,14 @@
             </div>
         </div>
         <UCollapsible class="book-body" :class="isOpen ? 'p-1' : 'p-0'"
-            :unmount-on-hide="false"
+            :unmount-on-hide="true"
             v-model:open="isOpen"
         >
             <template #content>
-                <Placeholder />
+                <GW2SpecializationsClient :specializations="buildDisplay" :direction="'column'" />
+                <BodyGear :build="build" />
+                <BlingGear :build="build" />
+                <SwapsGear :swaps="weaponSwaps" />
             </template>
         </UCollapsible>
     </div>

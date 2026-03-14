@@ -276,6 +276,12 @@ export const GW2_STATS_RELICS: GW2RelicOption[] = (() => {
   return deduped;
 })();
 
+export function getRelicLabel(id: number | null | undefined): string {
+  if (!id)
+    return 'Unknown';
+  return GW2_RELICS.filter(r => r.id == id)[0]?.name || "";
+};
+
 /* RUNES */
 import rawRunes from '../data/runes.json';
 export interface GW2Rune {
@@ -312,6 +318,12 @@ export const GW2_STATS_RUNES: GW2RuneOption[] = (() => {
   deduped.sort((a, b) => a.label.localeCompare(b.label, 'fr', { sensitivity: 'base' }) || a.value - b.value);
   return deduped;
 })();
+
+export function getRuneLabel(id: number | null | undefined): string {
+  if (!id)
+    return 'Unknown';
+  return GW2_RUNES.filter(r => r.id == id)[0]?.name || "";
+};
 
 /* SIGILS */
 import rawSigils from '../data/sigils.json';
@@ -350,6 +362,12 @@ export const GW2_STATS_SIGILS: GW2SigilOption[] = (() => {
   return deduped;
 })();
 
+export function getSigilLabel(id: number | null | undefined): string {
+  if (!id)
+    return 'Unknown';
+  return GW2_SIGILS.filter(r => r.id == id)[0]?.name || "";
+};
+
 /* SPECS */
 import rawSpecs from '../data/specs.json';
 export interface GW2Spec {
@@ -377,4 +395,101 @@ export function getGW2Spec(specID: number)
 export function isSpecElite(specID: number)
 {
     return GW2_SPECIALIZATIONS_ELITES.filter(sp => sp.id == specID).length > 0;
+}
+
+/* MISC */
+type Gw2Specialization = { id: number, major_traits: number[] };
+type Gw2SpecDict = Record<number, Gw2Specialization>;
+type Gw2Display = { id: number, traits: number[] };
+type DecodedBuild = {
+    type: 'build'
+    specialization1?: number
+    traitChoices1?: number[]
+    specialization2?: number
+    traitChoices2?: number[]
+    specialization3?: number
+    traitChoices3?: number[]
+};
+
+export function isValidGW2Link(link: string): boolean
+{
+  const GW2_LINK_REGEX = /^\[\&[A-Za-z0-9+/=]+\]$/;
+  return GW2_LINK_REGEX.test(link);
+}
+
+import { decode } from 'gw2e-chat-codes';
+export function extractSpecs(buildString: string): number[]
+{
+  if (buildString.length <= 0)
+    return [];
+  if (!isValidGW2Link(buildString))
+    return [];
+
+  let buildInfos = decode(buildString);
+  if (buildInfos === false)
+    return [];
+  if (buildInfos.type != "build")
+    return [];
+
+  const specs: number[] = [
+    buildInfos.specialization1,
+    buildInfos.specialization2,
+    buildInfos.specialization3
+  ].filter((n): n is number => typeof n === 'number' && n > 0);
+
+  return specs;
+}
+
+export function buildArmoryPayload(decoded: DecodedBuild, specsById: Gw2SpecDict): Array<{ id: number; traits: number[] }> {
+  const result: Array<{ id: number; traits: number[] }> = [];
+  const entries: Array<[number | undefined, number[] | undefined]> = [
+      [decoded.specialization1, decoded.traitChoices1],
+      [decoded.specialization2, decoded.traitChoices2],
+      [decoded.specialization3, decoded.traitChoices3]
+  ];
+
+  for (const [specId, choices] of entries) {
+      if (!specId)
+        continue;
+
+      const specData = specsById[specId];
+      const traits = choices && specData ? resolveTraitsForSpecialization(specData, choices) : [];
+      result.push({ id: specId, traits });
+  }
+
+  return result;
+}
+
+export async function getBuildDisplay(buildString: string): Promise<Gw2Display[]>
+{
+  const buildInfos = decode(buildString);
+  if (buildInfos === false)
+      return [] as Gw2Display[];
+  if (buildInfos.type != "build")
+      return [] as Gw2Display[];
+
+  const specs: number[] = extractSpecs(buildString);
+  const specsAPI = await $fetch('/api/gw2/specializations', {
+      params: { ids: specs }
+  });
+
+  const dict = Object.fromEntries((specsAPI as any).map((s: any) => [s.id, s]));
+  const armoryDatas = buildArmoryPayload(buildInfos, dict);
+  return armoryDatas as Gw2Display[];
+}
+
+export function resolveTraitsForSpecialization(spec: Gw2Specialization, traitChoices: number[]): number[] {
+  if (!spec || !Array.isArray(spec.major_traits))
+      return [];
+
+  return traitChoices
+    .map((choice, tierIdx) => {
+      if (!choice || choice < 1 || choice > 3)
+        return null;
+
+      const baseIndex = tierIdx * 3;
+      const traitIndex = baseIndex + (choice - 1);
+      return spec.major_traits[traitIndex] ?? null;
+    })
+    .filter(Boolean) as number[];
 }
