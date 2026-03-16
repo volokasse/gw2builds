@@ -2043,6 +2043,7 @@ export namespace Prisma {
     id: number | null
     buildClass: number | null
     buildSpec: number | null
+    position: number | null
     ownerId: number | null
   }
 
@@ -2050,6 +2051,7 @@ export namespace Prisma {
     id: number | null
     buildClass: number | null
     buildSpec: number | null
+    position: number | null
     ownerId: number | null
   }
 
@@ -2064,6 +2066,7 @@ export namespace Prisma {
     isPublic: boolean | null
     createdAt: Date | null
     slug: string | null
+    position: number | null
     ownerId: number | null
   }
 
@@ -2078,6 +2081,7 @@ export namespace Prisma {
     isPublic: boolean | null
     createdAt: Date | null
     slug: string | null
+    position: number | null
     ownerId: number | null
   }
 
@@ -2092,6 +2096,7 @@ export namespace Prisma {
     isPublic: number
     createdAt: number
     slug: number
+    position: number
     ownerId: number
     _all: number
   }
@@ -2101,6 +2106,7 @@ export namespace Prisma {
     id?: true
     buildClass?: true
     buildSpec?: true
+    position?: true
     ownerId?: true
   }
 
@@ -2108,6 +2114,7 @@ export namespace Prisma {
     id?: true
     buildClass?: true
     buildSpec?: true
+    position?: true
     ownerId?: true
   }
 
@@ -2122,6 +2129,7 @@ export namespace Prisma {
     isPublic?: true
     createdAt?: true
     slug?: true
+    position?: true
     ownerId?: true
   }
 
@@ -2136,6 +2144,7 @@ export namespace Prisma {
     isPublic?: true
     createdAt?: true
     slug?: true
+    position?: true
     ownerId?: true
   }
 
@@ -2150,6 +2159,7 @@ export namespace Prisma {
     isPublic?: true
     createdAt?: true
     slug?: true
+    position?: true
     ownerId?: true
     _all?: true
   }
@@ -2251,6 +2261,7 @@ export namespace Prisma {
     isPublic: boolean
     createdAt: Date
     slug: string | null
+    position: number
     ownerId: number
     _count: BuildCountAggregateOutputType | null
     _avg: BuildAvgAggregateOutputType | null
@@ -2284,6 +2295,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: boolean
     slug?: boolean
+    position?: boolean
     ownerId?: boolean
     owner?: boolean | UserDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["build"]>
@@ -2301,10 +2313,11 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: boolean
     slug?: boolean
+    position?: boolean
     ownerId?: boolean
   }
 
-  export type BuildOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "styleTemplate" | "buildTemplate" | "buildClass" | "buildSpec" | "buildEquipment" | "isPublic" | "createdAt" | "slug" | "ownerId", ExtArgs["result"]["build"]>
+  export type BuildOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "styleTemplate" | "buildTemplate" | "buildClass" | "buildSpec" | "buildEquipment" | "isPublic" | "createdAt" | "slug" | "position" | "ownerId", ExtArgs["result"]["build"]>
   export type BuildInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     owner?: boolean | UserDefaultArgs<ExtArgs>
   }
@@ -2325,6 +2338,7 @@ export namespace Prisma {
       isPublic: boolean
       createdAt: Date
       slug: string | null
+      position: number
       ownerId: number
     }, ExtArgs["result"]["build"]>
     composites: {}
@@ -2706,6 +2720,7 @@ export namespace Prisma {
     readonly isPublic: FieldRef<"Build", 'Boolean'>
     readonly createdAt: FieldRef<"Build", 'DateTime'>
     readonly slug: FieldRef<"Build", 'String'>
+    readonly position: FieldRef<"Build", 'Int'>
     readonly ownerId: FieldRef<"Build", 'Int'>
   }
     
@@ -3963,6 +3978,7 @@ export namespace Prisma {
     isPublic: 'isPublic',
     createdAt: 'createdAt',
     slug: 'slug',
+    position: 'position',
     ownerId: 'ownerId'
   };
 
@@ -4131,6 +4147,7 @@ export namespace Prisma {
     isPublic?: BoolFilter<"Build"> | boolean
     createdAt?: DateTimeFilter<"Build"> | Date | string
     slug?: StringNullableFilter<"Build"> | string | null
+    position?: IntFilter<"Build"> | number
     ownerId?: IntFilter<"Build"> | number
     owner?: XOR<UserScalarRelationFilter, UserWhereInput>
   }
@@ -4146,6 +4163,7 @@ export namespace Prisma {
     isPublic?: SortOrder
     createdAt?: SortOrder
     slug?: SortOrderInput | SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
     owner?: UserOrderByWithRelationInput
     _relevance?: BuildOrderByRelevanceInput
@@ -4165,6 +4183,7 @@ export namespace Prisma {
     buildEquipment?: StringFilter<"Build"> | string
     isPublic?: BoolFilter<"Build"> | boolean
     createdAt?: DateTimeFilter<"Build"> | Date | string
+    position?: IntFilter<"Build"> | number
     ownerId?: IntFilter<"Build"> | number
     owner?: XOR<UserScalarRelationFilter, UserWhereInput>
   }, "id" | "slug">
@@ -4180,6 +4199,7 @@ export namespace Prisma {
     isPublic?: SortOrder
     createdAt?: SortOrder
     slug?: SortOrderInput | SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
     _count?: BuildCountOrderByAggregateInput
     _avg?: BuildAvgOrderByAggregateInput
@@ -4202,6 +4222,7 @@ export namespace Prisma {
     isPublic?: BoolWithAggregatesFilter<"Build"> | boolean
     createdAt?: DateTimeWithAggregatesFilter<"Build"> | Date | string
     slug?: StringNullableWithAggregatesFilter<"Build"> | string | null
+    position?: IntWithAggregatesFilter<"Build"> | number
     ownerId?: IntWithAggregatesFilter<"Build"> | number
   }
 
@@ -4308,6 +4329,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
     owner: UserCreateNestedOneWithoutBuildsInput
   }
 
@@ -4322,6 +4344,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
     ownerId: number
   }
 
@@ -4335,6 +4358,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
     owner?: UserUpdateOneRequiredWithoutBuildsNestedInput
   }
 
@@ -4349,6 +4373,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
     ownerId?: IntFieldUpdateOperationsInput | number
   }
 
@@ -4363,6 +4388,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
     ownerId: number
   }
 
@@ -4376,6 +4402,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
   }
 
   export type BuildUncheckedUpdateManyInput = {
@@ -4389,6 +4416,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
     ownerId?: IntFieldUpdateOperationsInput | number
   }
 
@@ -4611,6 +4639,7 @@ export namespace Prisma {
     isPublic?: SortOrder
     createdAt?: SortOrder
     slug?: SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
   }
 
@@ -4618,6 +4647,7 @@ export namespace Prisma {
     id?: SortOrder
     buildClass?: SortOrder
     buildSpec?: SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
   }
 
@@ -4632,6 +4662,7 @@ export namespace Prisma {
     isPublic?: SortOrder
     createdAt?: SortOrder
     slug?: SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
   }
 
@@ -4646,6 +4677,7 @@ export namespace Prisma {
     isPublic?: SortOrder
     createdAt?: SortOrder
     slug?: SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
   }
 
@@ -4653,6 +4685,7 @@ export namespace Prisma {
     id?: SortOrder
     buildClass?: SortOrder
     buildSpec?: SortOrder
+    position?: SortOrder
     ownerId?: SortOrder
   }
 
@@ -4949,6 +4982,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
   }
 
   export type BuildUncheckedCreateWithoutOwnerInput = {
@@ -4962,6 +4996,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
   }
 
   export type BuildCreateOrConnectWithoutOwnerInput = {
@@ -5004,6 +5039,7 @@ export namespace Prisma {
     isPublic?: BoolFilter<"Build"> | boolean
     createdAt?: DateTimeFilter<"Build"> | Date | string
     slug?: StringNullableFilter<"Build"> | string | null
+    position?: IntFilter<"Build"> | number
     ownerId?: IntFilter<"Build"> | number
   }
 
@@ -5060,6 +5096,7 @@ export namespace Prisma {
     isPublic?: boolean
     createdAt?: Date | string
     slug?: string | null
+    position?: number
   }
 
   export type BuildUpdateWithoutOwnerInput = {
@@ -5072,6 +5109,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
   }
 
   export type BuildUncheckedUpdateWithoutOwnerInput = {
@@ -5085,6 +5123,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
   }
 
   export type BuildUncheckedUpdateManyWithoutOwnerInput = {
@@ -5098,6 +5137,7 @@ export namespace Prisma {
     isPublic?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     slug?: NullableStringFieldUpdateOperationsInput | string | null
+    position?: IntFieldUpdateOperationsInput | number
   }
 
 

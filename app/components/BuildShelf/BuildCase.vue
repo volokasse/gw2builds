@@ -2,8 +2,33 @@
     import BuildBook from './BuildBook.vue';
     import { type Build } from '@/shared/prisma';
     import { type Profession } from '@/types/profession';
+    import { VueDraggable } from 'vue-draggable-plus';
 
-    const props = defineProps<{ builds?: Build[], profession?: Profession }>();
+    const props = withDefaults(defineProps<{ builds: Build[], profession?: Profession }>(), {
+        builds: () => []
+    });
+    const localBuilds = ref<Build[]>([...props.builds]);
+
+    const emit = defineEmits<{(e: 'update:builds', value: Build[]): void}>();
+    watch(
+        () => props.builds,
+        (value) => { localBuilds.value = [...value]; }
+    );
+    watch(localBuilds, (value) => {
+        emit('update:builds', value)
+    }, { deep: true });
+
+    async function onDragEnd() {
+        const payload = localBuilds.value.map((build, index) => ({
+            id: build.id,
+            position: index
+        }));
+
+        await $fetch('/api/builds/reorder', {
+            method: 'POST',
+            body: payload
+        });
+    };
 </script>
 
 <template>
@@ -11,17 +36,23 @@
         <div class="case-header">
             {{ profession?.label }}
         </div>
-        <div class="case-body">
-            <BuildBook :build="build" v-for="build of builds" />
-        </div>
+        <VueDraggable
+            v-model="localBuilds"
+            item-key="id"
+            handle=".drag-handle"
+            :animation="150"
+            ghost-class="drag-ghost"
+            @end="onDragEnd"
+            class="case-body"
+        >
+            <BuildBook :build="build" v-for="build of localBuilds" :key="build.id" />
+        </VueDraggable>
     </div>
 </template>
 
 <style lang="scss" scoped>
     .case
     {
-        //border: 1px solid var(--color-gray-900);
-
         display: flex;
         flex-direction: column;
         min-height: 100px;
@@ -42,6 +73,10 @@
             row-gap: 5px;
             padding: 5px 8px 25px 8px;
         }
+    }
+    .drag-ghost
+    {
+        opacity: 0.5;
     }
 </style>
 <style lang="scss">

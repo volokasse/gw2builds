@@ -29,6 +29,7 @@ model Build {
   isPublic       Boolean    @default(false)
   createdAt      DateTime   @default(now())
   slug           String?    @unique @db.VarChar(5)
+  position       Int        @default(0)
 
   // FK vers User
   owner       User      @relation(fields: [ownerId], references: [id], onDelete: Cascade)

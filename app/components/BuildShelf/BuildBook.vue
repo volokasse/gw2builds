@@ -58,6 +58,16 @@
 <template>
     <div class="book rounded">
         <div class="book-header" @click="toggleOpen">
+            <UTooltip text="Déplacer" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
+                <UButton
+                    class="icon rounded-1 drag-handle px-0"
+                    icon="material-symbols:drag-indicator"
+                    size="md"
+                    color="neutral"
+                    variant="link"
+                    @click.stop
+                />
+            </UTooltip>
             <EliteIcon :specid="build?.buildSpec" />
             <ProfessionIcon :professionid="build?.buildClass || 0" :specid="build?.buildSpec || 0" />
             <div class="name">
@@ -144,12 +154,9 @@
 <style lang="scss">
     .book
     {
-        .actions
+        button:hover
         {
-            & button:hover
-            {
-                cursor: pointer;
-            }
+            cursor: pointer;
         }
     }
 </style>

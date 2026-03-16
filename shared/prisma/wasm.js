@@ -111,6 +111,7 @@ exports.Prisma.BuildScalarFieldEnum = {
   isPublic: 'isPublic',
   createdAt: 'createdAt',
   slug: 'slug',
+  position: 'position',
   ownerId: 'ownerId'
 };
 
@@ -183,7 +184,7 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
+    "rootEnvPath": null,
     "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
@@ -202,13 +203,13 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../shared/prisma\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id           Int      @id @default(autoincrement())\n  username     String   @unique\n  passwordHash String\n  createdAt    DateTime @default(now())\n\n  // Relations\n  builds Build[]\n}\n\nmodel Build {\n  id             Int      @id @default(autoincrement())\n  title          String\n  styleTemplate  String   @default(\"\")\n  buildTemplate  String\n  buildClass     Int      @default(0)\n  buildSpec      Int      @default(0)\n  buildEquipment String   @db.LongText\n  isPublic       Boolean  @default(false)\n  createdAt      DateTime @default(now())\n  slug           String?  @unique @db.VarChar(5)\n\n  // FK vers User\n  owner   User @relation(fields: [ownerId], references: [id], onDelete: Cascade)\n  ownerId Int\n}\n\nmodel Gw2Cache {\n  key       String   @id\n  data      String   @db.LongText\n  updatedAt DateTime @updatedAt\n}\n",
-  "inlineSchemaHash": "a35c2376f439303992c7fc6d0b39198534b40003f92d2d157d448475bd313682",
+  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../shared/prisma\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id           Int      @id @default(autoincrement())\n  username     String   @unique\n  passwordHash String\n  createdAt    DateTime @default(now())\n\n  // Relations\n  builds Build[]\n}\n\nmodel Build {\n  id             Int      @id @default(autoincrement())\n  title          String\n  styleTemplate  String   @default(\"\")\n  buildTemplate  String\n  buildClass     Int      @default(0)\n  buildSpec      Int      @default(0)\n  buildEquipment String   @db.LongText\n  isPublic       Boolean  @default(false)\n  createdAt      DateTime @default(now())\n  slug           String?  @unique @db.VarChar(5)\n  position       Int      @default(0)\n\n  // FK vers User\n  owner   User @relation(fields: [ownerId], references: [id], onDelete: Cascade)\n  ownerId Int\n}\n\nmodel Gw2Cache {\n  key       String   @id\n  data      String   @db.LongText\n  updatedAt DateTime @updatedAt\n}\n",
+  "inlineSchemaHash": "8c4cd5c770817eff22701d180abccab628876625a16716931bbbb451708ae912",
   "copyEngine": true
 }
 config.dirname = '/'
 
-config.runtimeDataModel = JSON.parse("{\"models\":{\"User\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"username\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"passwordHash\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"builds\",\"kind\":\"object\",\"type\":\"Build\",\"relationName\":\"BuildToUser\"}],\"dbName\":null},\"Build\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"title\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"styleTemplate\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"buildTemplate\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"buildClass\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"buildSpec\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"buildEquipment\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"isPublic\",\"kind\":\"scalar\",\"type\":\"Boolean\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"slug\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"owner\",\"kind\":\"object\",\"type\":\"User\",\"relationName\":\"BuildToUser\"},{\"name\":\"ownerId\",\"kind\":\"scalar\",\"type\":\"Int\"}],\"dbName\":null},\"Gw2Cache\":{\"fields\":[{\"name\":\"key\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"data\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"updatedAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"}],\"dbName\":null}},\"enums\":{},\"types\":{}}")
+config.runtimeDataModel = JSON.parse("{\"models\":{\"User\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"username\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"passwordHash\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"builds\",\"kind\":\"object\",\"type\":\"Build\",\"relationName\":\"BuildToUser\"}],\"dbName\":null},\"Build\":{\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"title\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"styleTemplate\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"buildTemplate\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"buildClass\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"buildSpec\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"buildEquipment\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"isPublic\",\"kind\":\"scalar\",\"type\":\"Boolean\"},{\"name\":\"createdAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"},{\"name\":\"slug\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"position\",\"kind\":\"scalar\",\"type\":\"Int\"},{\"name\":\"owner\",\"kind\":\"object\",\"type\":\"User\",\"relationName\":\"BuildToUser\"},{\"name\":\"ownerId\",\"kind\":\"scalar\",\"type\":\"Int\"}],\"dbName\":null},\"Gw2Cache\":{\"fields\":[{\"name\":\"key\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"data\",\"kind\":\"scalar\",\"type\":\"String\"},{\"name\":\"updatedAt\",\"kind\":\"scalar\",\"type\":\"DateTime\"}],\"dbName\":null}},\"enums\":{},\"types\":{}}")
 defineDmmfProperty(exports.Prisma, config.runtimeDataModel)
 config.engineWasm = {
   getRuntime: async () => require('./query_engine_bg.js'),

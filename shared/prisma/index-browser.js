@@ -139,6 +139,7 @@ exports.Prisma.BuildScalarFieldEnum = {
   isPublic: 'isPublic',
   createdAt: 'createdAt',
   slug: 'slug',
+  position: 'position',
   ownerId: 'ownerId'
 };
 

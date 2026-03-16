@@ -24,11 +24,20 @@
             (builds[build.buildClass] ??= []).push(build);
         return { builds };
     }
+
+    function sortBuilds(a: Build, b: Build)
+    {
+        if (a.position > b.position)
+            return 1;
+        else if (a.position < b.position)
+            return -1;
+        return 0;
+    }
 </script>
 
 <template>
     <div class="shelf">
-        <BuildCase v-for="profession in (GW2_PROFESSION_OPTIONS as Profession[])" :builds="buildsByProf.builds[profession.value]" :profession="profession" />
+        <BuildCase v-for="profession in (GW2_PROFESSION_OPTIONS as Profession[])" :builds="buildsByProf.builds[profession.value]?.sort(sortBuilds) || []" :profession="profession" />
     </div>
 </template>
 
