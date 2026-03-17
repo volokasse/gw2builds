@@ -127,3 +127,4 @@
 
 # Usefull Commands:
 ```npx prisma generate``` - Pour générer le client prisma
+```npx prisma migrate dev --name add_user_status```
