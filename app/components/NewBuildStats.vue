@@ -66,8 +66,6 @@
         }
 
         out['weapons'] = swapsDTO.value;
-
-        console.log(out);
         equipment.value = JSON.stringify(out);
     }
     watch([selected, swapsDTO], emitJson, { deep: true, immediate: true });

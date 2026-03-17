@@ -9,7 +9,10 @@
     });
     const localBuilds = ref<Build[]>([...props.builds]);
 
-    const emit = defineEmits<{(e: 'update:builds', value: Build[]): void}>();
+    const emit = defineEmits<{
+        (e: 'update:builds', value: Build[]): void,
+        (e: 'update:delete'): void
+    }>();
     watch(
         () => props.builds,
         (value) => { localBuilds.value = [...value]; }
@@ -45,7 +48,7 @@
             @end="onDragEnd"
             class="case-body"
         >
-            <BuildBook :build="build" v-for="build of localBuilds" :key="build.id" />
+            <BuildBook :build="build" v-for="build of localBuilds" :key="build.id" @update:delete="() => emit('update:delete')"/>
         </VueDraggable>
     </div>
 </template>

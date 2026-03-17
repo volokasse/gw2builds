@@ -33,11 +33,24 @@
             return -1;
         return 0;
     }
+
+    async function refreshBuilds()
+    {
+        console.log("BUILDS REFRESH");
+        userBuilds.value = [];
+        userBuilds.value = await $fetch('/api/builds/by/' + user.value?.id, { method: 'GET' }) as Build[];
+        buildsByProf.value = groupBuildByProfession(userBuilds.value);
+    }
 </script>
 
 <template>
     <div class="shelf">
-        <BuildCase v-for="profession in (GW2_PROFESSION_OPTIONS as Profession[])" :builds="buildsByProf.builds[profession.value]?.sort(sortBuilds) || []" :profession="profession" />
+        <BuildCase
+            v-for="profession in (GW2_PROFESSION_OPTIONS as Profession[])"
+            :builds="buildsByProf.builds[profession.value]?.sort(sortBuilds) || []"
+            :profession="profession"
+            @update:delete="() => refreshBuilds()"
+        />
     </div>
 </template>
 

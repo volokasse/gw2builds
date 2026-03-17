@@ -9,9 +9,16 @@
     import { getBuildDisplay } from '@/utils/gw2';
     import { WeaponSwap, type WeaponSwapDTO } from '@/shared/Weapon';
 
-    const props = defineProps<{ build: Build }>();
-    const isOpen = ref(false);
+    /* MISC & VALUES */
+    const props = withDefaults(defineProps<{ build: Build, actionsenabled?: boolean }>(), {
+        actionsenabled: true
+    });
     const buildDisplay = await getBuildDisplay(props.build.buildTemplate);
+    const isOpen = ref(false);
+    function toggleOpen()
+    {
+        isOpen.value = !isOpen.value;
+    }
 
     type BuildEquipmentDTO = { weapons?: WeaponSwapDTO[] };
     const equipment = computed<BuildEquipmentDTO>(() => {
@@ -25,6 +32,7 @@
         return (equipment.value.weapons ?? []).map(WeaponSwap.fromDTO);
     });
 
+    /* COPY BUILD */
     const tooltipTextsBuild = ["Copier Build", "Build copié !"];
     const actualTooltipBuild = ref(tooltipTextsBuild[0]);
     async function copyBuild()
@@ -37,6 +45,7 @@
         setTimeout(() => { actualTooltipBuild.value = tooltipTextsBuild[0]; }, 100);
     }
 
+    /* COPY STYLE */
     const tooltipTextsStyle = ["Copier Style", "Style copié !"];
     const actualTooltipStyle = ref(tooltipTextsStyle[0]);
     async function copyStyle()
@@ -49,16 +58,26 @@
         setTimeout(() => { actualTooltipStyle.value = tooltipTextsStyle[0]; }, 100);
     }
 
-    function toggleOpen()
+    /* DELETE BUILD */
+    const emit = defineEmits<{(e: 'update:delete'): void}>();
+    async function deleteBuild(buildid: number)
     {
-        isOpen.value = !isOpen.value;
+        const res = await $fetch('/api/builds/delete/', {
+            method: 'POST',
+            body: {
+                buildid: buildid
+            }
+        });
+
+        if (res.success)
+            emit('update:delete');
     }
 </script>
 
 <template>
     <div class="book rounded">
         <div class="book-header" @click="toggleOpen">
-            <UTooltip text="Déplacer" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0">
+            <UTooltip text="Déplacer" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" v-if="actionsenabled">
                 <UButton
                     class="icon rounded-1 drag-handle px-0"
                     icon="material-symbols:drag-indicator"
@@ -78,21 +97,24 @@
                 </UTooltip>
             </div>
             <div class="actions">
-                <!-- COPY BUILD -->
-                <UTooltip :text="actualTooltipBuild" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true">
-                    <UButton class="icon rounded-full" icon="material-symbols:content-copy" size="md" color="neutral" variant="ghost" @click.stop="copyBuild" @mouseleave="resetCopyBuild" />
-                </UTooltip>
                 <!-- COPY STYLE -->
                 <UTooltip :text="actualTooltipStyle" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true" v-if="build?.styleTemplate.length">
                     <UButton class="icon rounded-full" icon="material-symbols:content-copy-outline" size="md" color="neutral" variant="ghost" @click.stop="copyStyle" @mouseleave="resetCopyStyle" />
                 </UTooltip>
-                <!-- EDIT -->
-                <UTooltip text="Editer build" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true">
-                    <UButton class="icon rounded-full" icon="material-symbols:edit" size="md" color="neutral" variant="ghost" @click.stop="" @mouseleave="" />
+                <!-- COPY BUILD -->
+                <UTooltip :text="actualTooltipBuild" :content="{ align: 'center', side: 'top', sideOffset: 8 }" :delay-duration="0" :disableClosingTrigger="true">
+                    <UButton class="icon rounded-full" icon="material-symbols:content-copy" size="md" color="neutral" variant="ghost" @click.stop="copyBuild" @mouseleave="resetCopyBuild" />
                 </UTooltip>
-                <!-- UP/DOWN ICONS-->
-                <UIcon size="25" name="material-symbols:keyboard-arrow-up-rounded" v-if="isOpen" />
-                <UIcon size="25" name="material-symbols:keyboard-arrow-down-rounded" v-if="!isOpen" />
+                <!-- SECONDARY ACTIONS -->
+                <UPopover :content="{ align: 'center', side: 'top', sideOffset: 0 }" arrow v-if="actionsenabled">
+                    <UButton class="icon rounded-full" icon="material-symbols:settings" size="md" color="neutral" variant="ghost" @click.stop />
+                    <template #content>
+                        <div class="actions-grid">
+                            <UButton class="icon" icon="material-symbols:edit" size="md" color="neutral" variant="ghost" @click.stop="" />
+                            <UButton class="icon" icon="material-symbols:delete" size="md" color="neutral" variant="ghost" @click.stop="deleteBuild(build.id)" />
+                        </div>
+                    </template>
+                </UPopover>
             </div>
         </div>
         <UCollapsible class="book-body" :class="isOpen ? 'p-1' : 'p-0'"
@@ -155,6 +177,20 @@
     .book
     {
         button:hover
+        {
+            cursor: pointer;
+        }
+    }
+    .actions-grid
+    {
+        display: grid;
+        padding: 3px;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+        max-width: calc(32px * 3);
+        width: fit-content;
+
+        .icon
         {
             cursor: pointer;
         }
